@@ -272,6 +272,49 @@
     behavior: Destroy
 
 - type: entity
+  name: banana test pie
+  parent: FoodPieBase
+  id: FoodPieBananaCreamTest
+  description: Just like back home, on clown planet! HONK!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - banana
+      - creamy
+  - type: Sprite
+    layers:
+    - state: tin
+    - state: plain
+  - type: CreamPie
+  - type: ThrowingAngle
+    angle: 180
+  - type: LandAtCursor
+  - type: ContainerContainer
+    containers:
+      payloadSlot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      payloadSlot:
+        whitelist:
+          components:
+          - OnUseTimerTrigger
+        insertSound:
+          path: /Audio/Weapons/Guns/Empty/empty.ogg
+        ejectSound:
+          path: /Audio/Weapons/Guns/Empty/empty.ogg
+        swap: false
+        disableEject: true
+  - type: Tag
+    tags:
+    - Fruit
+    - Pie
+  - type: SliceableFood
+    slice: FoodPieBananaCreamSlice
+  - type: ThrowableBlocked # Goobstation
+    behavior: Destroy
+    
+- type: entity
   name: slice of banana cream pie
   parent: FoodPieSliceBase
   id: FoodPieBananaCreamSlice
