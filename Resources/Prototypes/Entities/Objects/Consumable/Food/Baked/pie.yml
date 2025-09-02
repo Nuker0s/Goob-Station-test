@@ -293,6 +293,15 @@
   - type: ContainerContainer
     containers:
       payloadSlot: !type:ContainerSlot
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents: #Most of these are this with slight variations, not worth changing until we have the rest of the reagents
+        - ReagentId: Water
+          Quantity: 10
+        - ReagentId: Water
+          Quantity: 10
   - type: ItemSlots
     slots:
       payloadSlot:
@@ -312,7 +321,6 @@
   - type: SliceableFood
     slice: FoodPieBananaCreamSlice
   - type: ThrowableBlocked # Goobstation
-    behavior: Destroy
     
 - type: entity
   name: slice of banana cream pie
