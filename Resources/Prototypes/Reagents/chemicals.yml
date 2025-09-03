@@ -227,6 +227,15 @@
   physicalDesc: reagent-physical-desc-crystalline
 
 - type: reagent
+  id: Pooporium
+  name: reagent-name-poop
+  group: Biological
+  desc: reagent-desc-poop
+  flavor: bitter
+  color: "#915000d9"
+  physicalDesc: reagent-physical-desc-crystalline
+
+- type: reagent
   id: Rororium
   name: reagent-name-rororium
   desc: reagent-desc-rororium

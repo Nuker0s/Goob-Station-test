@@ -298,9 +298,7 @@
       food:
         maxVol: 20
         reagents: #Most of these are this with slight variations, not worth changing until we have the rest of the reagents
-        - ReagentId: Water
-          Quantity: 10
-        - ReagentId: Water
+        - ReagentId: Pooporium
           Quantity: 10
   - type: ItemSlots
     slots:

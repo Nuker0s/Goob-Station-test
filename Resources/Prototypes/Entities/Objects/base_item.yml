@@ -155,6 +155,17 @@
   - type: DamageExaminable
 
 - type: entity
+  id: Poop
+  name: poop
+  parent: BaseItem
+  components:
+  - type: Item
+    sprite: Objects/Fun/poop.rsi
+    storedRotation: -90
+  - type: Sprite
+    sprite: Objects/Fun/poop.rsi
+
+- type: entity
   name: "storage item"
   id: BaseStorageItem
   parent: BaseItem
